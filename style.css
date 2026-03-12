@@ -1,0 +1,174 @@
+
+body {
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+
+/* NAVBAR */
+.ubuy-navbar {
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 991px) {
+  .search-bar {
+    border-radius: 25px !important;
+    padding: 4px 4px 4px 12px !important;
+  }
+
+  .navbar-ul {
+    gap: 8px;
+  }
+
+  .navbar-ul .nav-item img {
+    width: 26px !important;
+    height: 26px !important;
+  }
+}
+
+
+
+
+
+.explore-btn img {
+  height: 23px;
+  width: 23px;
+  font-size: 13px;
+  line-height: 1.5px;
+}
+
+.search-bar input {
+  font-size: 13px;
+  line-height: 1.5;
+  border: none;
+  outline: none;
+}
+
+.navbar-ul nav-link {
+  font-size: 14px;
+  color: #151515;
+}
+
+
+/* HERO SECTION */
+.hero-section .badge {
+  background-color: rgba(255, 177, 0, 0.1019607843);
+  font-size: 13px;
+  border: 1px solid rgba(255, 177, 0, 0.2);
+  font-family: "poppinsregular", sans-serif;
+}
+
+.hero-section .hero-h1 {
+  line-height: 60px;
+  font-size: 48px;
+  color: #151515;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.hero-section .hero-p {
+  font-size: 20px;
+  line-height: 32px;
+  color: #464646;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.hero-section .hero-p2 {
+  font-size: 20px;
+}
+
+.hero-p2 img {
+  margin-right: 8px;
+}
+
+.hero-section {
+  min-height: 100vh;
+}
+
+
+/* FORM SECTION */
+.form-section .form-apply-span {
+  font-weight: 400;
+  font-size: 35px;
+  color: #ffb100;
+  line-height: 1.1;
+}
+
+.form-section .form-apply-h2 {
+  font-size: 35px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.form-section .form-apply-p {
+  font-size: 21px;
+  line-height: normal;
+  color: #333;
+}
+
+.form-section .form-control {
+  font-size: 14px;
+}
+
+.form-section .form-control::placeholder {
+  font-size: 14px;
+}
+
+.form-section .submit-btn {
+  background-color: #ffb100;
+  font-size: 18px;
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: solid 1px rgba(0, 0, 0, 0.062745098);
+}
+
+
+/* BENEFITS SECTION */
+
+.benefits-section .badge {
+  font-size: 13px;
+  margin-bottom: 18px;
+  background-color: rgba(255, 177, 0, 0.1019607843);
+  padding: 5px 16px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 177, 0, 0.2);
+  font-weight: 400;
+}
+
+.benefits-section .benefits-section-h2 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.benefits-section .benefits-section-p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.career-card {
+  font-size: 14px;
+  background-color: #f8fafc;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #222;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #777;
+}
