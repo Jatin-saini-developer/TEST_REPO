@@ -1,9 +1,9 @@
 
+
 body {
   font-family: "Poppins";
   font-size: 14px;
 }
-
 
 /* NAVBAR */
 .ubuy-navbar {
@@ -14,21 +14,22 @@ body {
   .search-bar {
     border-radius: 25px !important;
     padding: 4px 4px 4px 12px !important;
+     width: 100% !important;
+    flex-basis: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   .navbar-ul {
     gap: 8px;
   }
 
-  .navbar-ul .nav-item img {
-    width: 26px !important;
-    height: 26px !important;
+  /* fixed icon sizing conflict */
+  .nav-icon {
+    width: 26px;
+    height: 26px;
   }
 }
-
-
-
-
 
 .explore-btn img {
   height: 23px;
@@ -44,11 +45,12 @@ body {
   outline: none;
 }
 
-.navbar-ul nav-link {
+/* FIXED selector */
+.navbar-ul .nav-link {
   font-size: 14px;
+  font-weight: 500;
   color: #151515;
 }
-
 
 /* HERO SECTION */
 .hero-section .badge {
@@ -64,6 +66,7 @@ body {
   color: #151515;
   font-weight: 400;
   letter-spacing: -0.5px;
+ 
 }
 
 .hero-section .hero-p {
@@ -72,6 +75,32 @@ body {
   color: #464646;
   margin-bottom: 20px;
   font-weight: 400;
+}
+
+/* @media (max-width:768px){
+.font-12{
+font-size:12px;
+}
+} */
+
+/* MOBILE FIX FOR HERO PARAGRAPH */
+/* 
+@media (max-width: 768px) {
+  .hero-section .hero-p {
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */
+
+@media (max-width: 768px) {
+  .hero-section .hero-p {
+    font-size: 13px;
+    line-height: 22px;
+  }
 }
 
 .hero-section .hero-p2 {
@@ -86,6 +115,13 @@ body {
   min-height: 100vh;
 }
 
+/* Mobile fix */
+/* @media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    
+  }
+} */
 
 /* FORM SECTION */
 .form-section .form-apply-span {
@@ -95,11 +131,11 @@ body {
   line-height: 1.1;
 }
 
-.form-section .form-apply-h2 {
+/* .form-section .form-apply-h2 {
   font-size: 35px;
   line-height: 1.1;
   font-weight: 400;
-}
+} */
 
 .form-section .form-apply-p {
   font-size: 21px;
@@ -118,13 +154,10 @@ body {
 .form-section .submit-btn {
   background-color: #ffb100;
   font-size: 18px;
-  padding: 10px 50px;
   border-radius: 5px;
-  border: solid 1px rgba(0, 0, 0, 0.062745098);
+  border: solid 1px rgba(0, 0, 0, 0.06);
 }
 
-
-/* BENEFITS SECTION */
 
 .benefits-section .badge {
   font-size: 13px;
@@ -147,6 +180,51 @@ body {
   line-height: 25px;
   margin-bottom: 20px;
 }
+
+/* TABLET */
+@media (max-width: 991px) {
+  .benefits-section .benefits-section-h2 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .benefits-section .benefits-section-p {
+    font-size: 15px;
+    line-height: 24px;
+
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .benefits-section .benefits-section-h2 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .benefits-section .benefits-section-p {
+    font-size: 13px;
+    line-height: 22px;
+
+  }
+}
+
+@media(max-width : 575px){
+  .benefits-section .benefits-section-h2{
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+}
+
+/* @media (max-width: 768px) {
+  .benefits-section .badge {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */
 
 .career-card {
   font-size: 14px;
@@ -171,4 +249,223 @@ body {
 .subtitle {
   font-size: 14px;
   color: #777;
+}
+
+/* icon size */
+.nav-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* hide short labels by default */
+.short-text {
+  display: none;
+  font-size: 16px;
+  margin-left: 3px;
+  margin-right: 4px;
+}
+
+/* spacing */
+.navbar-ul .nav-item {
+  gap: 4px;
+}
+
+/* ================== BELOW 1200px ================== */
+
+@media (max-width: 1200px) {
+  /* hide long words */
+  .long-text {
+    display: none;
+  }
+
+  /* show short words */
+  .short-text {
+    display: inline;
+  }
+
+  .navbar-ul {
+    gap: 10px;
+  }
+
+  .nav-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width : 768px){
+    .short-text {
+       font-size: 12px;
+     }
+
+}
+
+/* ================== MOBILE ================== */
+
+@media (max-width: 576px) {
+  .navbar-ul {
+    gap: 8px;
+  }
+
+  .nav-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* UBUY LOGO FIX */
+/* ================= LOGO RESPONSIVE ================= */
+
+.ubuy-logo {
+  width: 110px;
+  height: auto;
+  max-height: 50px;
+}
+
+/* laptop */
+@media (max-width: 1200px) {
+  .ubuy-logo {
+    width: 95px;
+  }
+}
+
+/* tablet */
+@media (max-width: 991px) {
+  .ubuy-logo {
+    width: 85px;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .ubuy-logo {
+    width: 75px;
+  }
+}
+
+/* small mobile */
+@media (max-width: 576px) {
+  .ubuy-logo {
+    width: 65px;
+  }
+}
+
+/* very small screens */
+@media (max-width: 400px) {
+  .ubuy-logo {
+    width: 55px;
+  }
+}
+
+.hero-h1 {
+  font-size: 48px;
+  line-height: 60px;
+
+}
+
+/* tablet */
+@media (max-width: 991px) {
+  .hero-section .hero-h1 {
+    font-size: 36px;
+    line-height: 46px;
+
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .hero-section .hero-h1 {
+    font-size: 28px;
+    line-height: 36px;
+    
+  }
+}
+
+/* MOBILE FONT SIZE FIX
+@media (max-width: 768px) {
+  .form-section .form-apply-span {
+    font-size: 17px;
+  }
+
+  .form-section .form-apply-h2 {
+    font-size: 17px;
+  }
+
+  .form-section .form-apply-p {
+    font-size: 15px;
+  }
+} */
+
+
+.form-section .form-apply-h2 {
+  font-size: 35px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+@media (max-width: 575px) {
+    .form-section .form-apply-h2 {
+        font-size: 25px !important;
+        line-height: 37px !important;
+    }
+
+      .form-section .form-apply-span {
+    font-size: 25px !important;
+        line-height: 37px !important;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .form-section .form-apply-h2 {
+    font-size: 22px;
+  }
+  
+  .form-section .form-apply-span {
+    font-size: 22px;
+  }
+} */
+
+@media (max-width: 375px) {
+      .form-section .form-apply-h2 {
+        font-size: 17px !important;
+        line-height: 25px !important;
+        margin-bottom: 6px  !important;
+    }
+
+    .form-section .form-apply-span {
+            font-size: 17px !important;
+        line-height: 25px !important;
+        margin-bottom: 6px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .form-section .form-apply-p{
+    font-size: 14px;
+  }
+}
+
+
+.subscribe-section {
+  background-image: url(https://d2ati23fc66y9j.cloudfront.net/ubuycom/footer-bg/stay-connected.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+   overflow: hidden;
+
+    
+  border-radius: 30px;
 }
